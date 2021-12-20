@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+}
+
+.card-wrapper {
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width:418px;
+    margin-bottom: 25px;
+}
+
+.card__title {
+    font-family: serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0;
+    margin-top: 7px;
+    padding-left: 18px;
+    margin-bottom: 5px;
+
+}
+
+.card__year, .card__rate {
+    display: flex;
+    align-items: center;
+    font-family: serif;
+    font-weight: 500;
+    font-size: 19px;
+    margin: 0;
+    padding-left: 18px;
+    margin-bottom: 9px;
+}
+
+.card__rate::before{
+    content:"";
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-image: url(./../images/star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.card__year::before {
+    content:"";
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-image: url(./../images/calendar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.card__btn {
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.card__button {
+    width: 110px;
+    background-color: #fff;
+    color: #4e79b9;
+    border: 1px solid #4e79b9;
+    border-radius: 6px;
+    padding: 7px;
+}
+
+.card__button:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
